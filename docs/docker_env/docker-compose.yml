@@ -39,9 +39,14 @@ services:
     environment:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: 12345678
-
+	  MYSQL_DATABASE: alert_micro
+      MYSQL_ROOT_PASSWORD: root
+      lower_case_table_names: 1  
+	  
   mysql-init:
     image: mysql:8.0.17
+    links:
+      - vole-eureka:eureka
     command: /init-db.sh
     networks:
       - app-net
@@ -53,3 +58,5 @@ services:
 networks:
   app-net:
     external: false
+
+	#--character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
