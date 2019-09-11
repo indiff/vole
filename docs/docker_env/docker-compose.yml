@@ -45,7 +45,7 @@ services:
   mysql-init:
     image: mysql:8.0.17
     links:
-      - vole-eureka:eureka
+      - app-mysql
     command: /init-db.sh
     networks:
       - app-net
