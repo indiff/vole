@@ -23,3 +23,11 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+/logs/vole-auth/*.log
+/logs/vole-config-server/*.log
+/logs/vole-eureka-server/*.log
+/logs/vole-gateway/*.log
+/logs/vole-mps/*.log
+/logs/vole-passport/*.log
+/logs/vole-portal-data/*.log
+/logs/vole-portal/*.log

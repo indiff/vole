@@ -18,7 +18,7 @@ CREATE TABLE `JOB_EXECUTION_LOG` (
   `start_time` timestamp NULL DEFAULT NULL,
   `complete_time` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 -- ----------------------------
 -- Table structure for JOB_STATUS_TRACE_LOG
@@ -38,7 +38,7 @@ CREATE TABLE `JOB_STATUS_TRACE_LOG` (
   `creation_time` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `TASK_ID_STATE_INDEX` (`task_id`,`state`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 -- ----------------------------
 -- Table structure for member_0
@@ -133,7 +133,7 @@ CREATE TABLE `oauth_client_details` (
   `autoapprove` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `oauth_client_idx1` (`client_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 -- ----------------------------
 -- Records of oauth_client_details
@@ -281,7 +281,7 @@ CREATE TABLE `sys_zuul_route` (
   `update_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   `del_flag` char(1) DEFAULT '0' COMMENT '删除标识（0-正常,1-删除）',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='动态路由配置表';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin COMMENT='动态路由配置表';
 
 -- ----------------------------
 -- Records of sys_zuul_route
