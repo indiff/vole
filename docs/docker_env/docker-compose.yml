@@ -47,7 +47,6 @@ services:
     container_name: app-mysql-init
     links:
       - mysql
-    command: /init-db.sh
     networks:
       - app-net
     volumes:
