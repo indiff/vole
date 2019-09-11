@@ -1,6 +1,6 @@
 -- 创建数据库
  DROP database IF EXISTS `portal`;
- create database `portal` default character set utf8mb4 collate utf8mb4_general_ci; -
+ create database `portal` default character set utf8mb4 collate utf8mb4_general_ci;
 -- 切换到 portal 数据库
  use portal;
 SET NAMES utf8mb4;
