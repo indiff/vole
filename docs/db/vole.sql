@@ -62,7 +62,7 @@ CREATE TABLE `member_0` (
 -- Records of member_0
 -- ----------------------------
 BEGIN;
-INSERT INTO `member_0` VALUES (1067629916525072386, 'vole', '{bcrypt}$2a$10$YCnmdlVnNsXdxR8t7glNeO5lPlDpbEijuFHrkcT13KcbqXsEVUqAC', '18512582267', NULL, '2018-11-28 12:02:52', NULL, '0');
+INSERT INTO `member_0` VALUES (1067629916525072386, 'qwop', '{bcrypt}$2a$10$YCnmdlVnNsXdxR8t7glNeO5lPlDpbEijuFHrkcT13KcbqXsEVUqAC', '18888888888', NULL, '2019-09-11 12:02:52', NULL, '0');
 COMMIT;
 
 -- ----------------------------
@@ -161,8 +161,8 @@ CREATE TABLE `permission` (
 -- Records of permission
 -- ----------------------------
 BEGIN;
-INSERT INTO `permission` VALUES (3, 'DEMO_ADMIN', '/demo/**', '*', 'demo所有权限', '2017-11-08 09:57:27', '2018-12-03 15:20:52');
-INSERT INTO `permission` VALUES (4, 'MPS_ADMIN', '/mps/**', '*', 'mps系统所有权限', '2017-11-08 10:13:37', '2018-12-03 15:21:41');
+INSERT INTO `permission` VALUES (3, 'DEMO_ADMIN', '/demo/**', '*', 'demo所有权限', '2019-09-11 09:57:27', '2019-09-11 15:20:52');
+INSERT INTO `permission` VALUES (4, 'MPS_ADMIN', '/mps/**', '*', 'mps系统所有权限', '2019-09-11 10:13:37', '2019-09-11 15:21:41');
 COMMIT;
 
 -- ----------------------------
@@ -185,8 +185,8 @@ CREATE TABLE `role` (
 -- Records of role
 -- ----------------------------
 BEGIN;
-INSERT INTO `role` VALUES (1, 'admin', 'ROLE_ADMIN', '超级管理员', '2017-10-29 15:45:51', '2018-04-22 11:40:29', '0');
-INSERT INTO `role` VALUES (14, 'user', 'ROLE_USER', '普通用户', '2018-04-20 07:14:32', '2018-04-21 23:35:22', '0');
+INSERT INTO `role` VALUES (1, 'admin', 'ROLE_ADMIN', '超级管理员', '2019-09-11 15:45:51', '2019-09-11 11:40:29', '0');
+INSERT INTO `role` VALUES (14, 'user', 'ROLE_USER', '普通用户', '2019-09-11 07:14:32', '2019-09-11 23:35:22', '0');
 COMMIT;
 
 -- ----------------------------
@@ -287,9 +287,9 @@ CREATE TABLE `sys_zuul_route` (
 -- Records of sys_zuul_route
 -- ----------------------------
 BEGIN;
-INSERT INTO `sys_zuul_route` VALUES (3, '/demo/**', 'vole-demo', '', '1', '1', '1', '', '2018-05-17 14:09:06', '2018-12-03 15:15:59', '0');
-INSERT INTO `sys_zuul_route` VALUES (4, '/mps/**', 'vole-mps', '', '1', '1', '1', '', '2018-05-21 11:40:38', '2018-12-03 15:16:16', '0');
-INSERT INTO `sys_zuul_route` VALUES (5, '/auth/**', 'vole-auth', '', '1', '1', '1', '', '2018-05-21 11:41:08', '2018-10-29 21:25:46', '0');
+INSERT INTO `sys_zuul_route` VALUES (3, '/demo/**', 'vole-demo', '', '1', '1', '1', '', '2019-09-11 14:09:06', '2019-09-11 15:15:59', '0');
+INSERT INTO `sys_zuul_route` VALUES (4, '/mps/**', 'vole-mps', '', '1', '1', '1', '', '2019-09-11 11:40:38', '2019-09-11 15:16:16', '0');
+INSERT INTO `sys_zuul_route` VALUES (5, '/auth/**', 'vole-auth', '', '1', '1', '1', '', '2019-09-11 11:41:08', '2019-09-11 21:25:46', '0');
 COMMIT;
 
 -- ----------------------------

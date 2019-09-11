@@ -18,7 +18,7 @@ CREATE TABLE `sys_dept` (
 -- Records of sys_dept
 -- ----------------------------
 BEGIN;
-INSERT INTO `sys_dept` VALUES (1, '架构部', 'JGDept', '2017-12-21 11:06:45', '2018-11-20 11:20:48');
+INSERT INTO `sys_dept` VALUES (1, '架构部', 'qwop', '2019-09-11 10:33:45', '2019-09-11 10:33:45');
 COMMIT;
 
 -- ----------------------------
@@ -112,12 +112,12 @@ CREATE TABLE `sys_role` (
 -- Records of sys_role
 -- ----------------------------
 BEGIN;
-INSERT INTO `sys_role` VALUES (15, '菜单管理', 'MENU_ADMIN', '菜单管理所有权限', 0, '2018-11-11 20:41:53', '2018-11-16 16:27:25');
-INSERT INTO `sys_role` VALUES (16, '部门管理', 'DEPT_ADMIN', '部门管理所有权限', 0, '2018-11-16 16:26:26', NULL);
-INSERT INTO `sys_role` VALUES (17, '角色管理', 'ROLE_ADMIN', '角色管理所有权限', 0, '2018-11-16 16:27:13', NULL);
-INSERT INTO `sys_role` VALUES (18, '用户管理', 'USER_ADMIN', '用户管理所有权限', 0, '2018-11-16 16:28:00', NULL);
-INSERT INTO `sys_role` VALUES (19, '系统管理', 'SYS_ADMIN', '系统信息管理所有权限', 0, '2018-11-16 16:28:41', NULL);
-INSERT INTO `sys_role` VALUES (20, '会员系统管理', 'MPS_ADMIN', '会员系统管理所有权限', 0, '2018-11-22 17:11:58', NULL);
+INSERT INTO `sys_role` VALUES (15, '菜单管理', 'MENU_ADMIN', '菜单管理所有权限', 0, '2019-09-11 20:41:53', '2019-09-11 16:27:25');
+INSERT INTO `sys_role` VALUES (16, '部门管理', 'DEPT_ADMIN', '部门管理所有权限', 0, '2019-09-11 16:26:26', NULL);
+INSERT INTO `sys_role` VALUES (17, '角色管理', 'ROLE_ADMIN', '角色管理所有权限', 0, '2019-09-11 16:27:13', NULL);
+INSERT INTO `sys_role` VALUES (18, '用户管理', 'USER_ADMIN', '用户管理所有权限', 0, '2019-09-11 16:28:00', NULL);
+INSERT INTO `sys_role` VALUES (19, '系统管理', 'SYS_ADMIN', '系统信息管理所有权限', 0, '2019-09-11 16:28:41', NULL);
+INSERT INTO `sys_role` VALUES (20, '会员系统管理', 'MPS_ADMIN', '会员系统管理所有权限', 0, '2019-09-11 17:11:58', NULL);
 COMMIT;
 
 -- ----------------------------
@@ -187,10 +187,10 @@ CREATE TABLE `sys_setting` (
 -- Records of sys_setting
 -- ----------------------------
 BEGIN;
-INSERT INTO `sys_setting` VALUES (1, '统一用户管理平台', 'PT', 'vole-portal', 1, '2017-12-21 11:06:45', '2018-11-16 16:34:58');
-INSERT INTO `sys_setting` VALUES (2, '抢购系统', 'QG', 'vole-qianggou', 0, '2018-11-16 12:45:04', NULL);
-INSERT INTO `sys_setting` VALUES (3, '验证码中心', 'IDC', 'vole-identity', 0, '2018-11-16 12:47:03', NULL);
-INSERT INTO `sys_setting` VALUES (4, '会员管理平台', 'MPS', 'vole-mps', 0, '2018-11-20 16:35:35', '2018-11-27 17:22:48');
+INSERT INTO `sys_setting` VALUES (1, '统一用户管理平台', 'PT', 'vole-portal', 1, '2019-09-11 11:06:45', '2019-09-11 16:34:58');
+INSERT INTO `sys_setting` VALUES (2, '抢购系统', 'QG', 'vole-qianggou', 0, '2019-09-11 12:45:04', NULL);
+INSERT INTO `sys_setting` VALUES (3, '验证码中心', 'IDC', 'vole-identity', 0, '2019-09-11 12:47:03', NULL);
+INSERT INTO `sys_setting` VALUES (4, '会员管理平台', 'MPS', 'vole-mps', 0, '2019-09-11 16:35:35', '2019-09-11 17:22:48');
 COMMIT;
 
 -- ----------------------------
@@ -249,7 +249,7 @@ CREATE TABLE `sys_user` (
 -- Records of sys_user
 -- ----------------------------
 BEGIN;
-INSERT INTO `sys_user` VALUES (5, 'xialaokou', '夏老抠', '{bcrypt}$2a$10$DPoi6hKJ/OiKuLnCzL1zWuHeGXaThdmlHLjC02ByEN7oILGE165rS', '18512582269', NULL, 1, 0, '2018-11-12 11:11:17', NULL);
+INSERT INTO `sys_user` VALUES (5, 'qwop', '系统管理员', '{bcrypt}$2a$10$DPoi6hKJ/OiKuLnCzL1zWuHeGXaThdmlHLjC02ByEN7oILGE165rS', '18888888888', NULL, 1, 0, '2019-09-11 11:11:17', NULL);
 COMMIT;
 
 -- ----------------------------
