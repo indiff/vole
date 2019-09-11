@@ -41,7 +41,7 @@ services:
       MYSQL_ROOT_PASSWORD: 12345678
       MYSQL_DATABASE: vole
       lower_case_table_names: 1
-	  
+
   mysql-init:
     image: mysql:8.0.17
     links:
