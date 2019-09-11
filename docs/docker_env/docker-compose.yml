@@ -5,7 +5,7 @@ services:
     container_name: app-redis
     restart: always
     volumes:
-      - ./data/redis:/data
+      - ../data/redis:/data
     environment:
       - REDIS_PASSWORD=
     networks:
@@ -19,7 +19,7 @@ services:
     container_name: app-rabbitmq
     restart: always
     volumes:
-      - ./data/rabbitmq:/var/lib/rabbitmq/mnesia
+      - ../data/rabbitmq:/var/lib/rabbitmq/mnesia
     networks:
       - app-net
     ports:
@@ -35,7 +35,7 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - ./data/mysql:/var/lib/mysql
+      - ../data/mysql:/var/lib/mysql
     environment:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: 12345678
