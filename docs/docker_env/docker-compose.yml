@@ -51,7 +51,6 @@ services:
     networks:
       - app-net
     volumes:
-      - ./init-db.sh:/init-db.sh
       - ../db:/docker-entrypoint-initdb.d/
     environment:
       MYSQL_ROOT_PASSWORD: 12345678
