@@ -50,7 +50,8 @@ services:
     networks:
       - app-net
     volumes:
-      - ../db:/docker-entrypoint-initdb.d/
+      - ../db/portal.sql:/docker-entrypoint-initdb.d/portal.sql
+      - ../db/vole.sql:/docker-entrypoint-initdb.d/vole.sql
     environment:
       MYSQL_ROOT_PASSWORD: 12345678
 
