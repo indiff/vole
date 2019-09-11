@@ -44,6 +44,7 @@ services:
 
   mysql-init:
     image: mysql:8.0.17
+    container_name: app-mysql-init
     links:
       - mysql
     command: /init-db.sh
@@ -51,6 +52,7 @@ services:
       - app-net
     volumes:
       - ./init-db.sh:/init-db.sh
+      - ../db:/docker-entrypoint-initdb.d/
     environment:
       MYSQL_ROOT_PASSWORD: 12345678
 
