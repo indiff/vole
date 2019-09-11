@@ -1,6 +1,7 @@
 version: '2'
 services:
   vole-eureka:
+    container_name: app-eureka
     build:
       context: ./
       dockerfile: Dockerfile-eureka
@@ -11,6 +12,7 @@ services:
   vole-config:
     links:
       - vole-eureka:eureka
+    container_name: app-config
     build:
       context: ./
       dockerfile: Dockerfile-config
@@ -19,6 +21,7 @@ services:
   vole-portal-data:
     links:
       - vole-eureka:eureka
+    container_name: app-portal-data
     build:
       context: ./
       dockerfile: Dockerfile-portal-data
@@ -27,6 +30,7 @@ services:
   vole-portal:
     links:
       - vole-eureka:eureka
+    container_name: app-portal
     build:
       context: ./
       dockerfile: Dockerfile-portal
@@ -35,6 +39,7 @@ services:
   vole-passport:
     links:
       - vole-eureka:eureka
+    container_name: app-passport
     build:
       context: ./
       dockerfile: Dockerfile-passport
@@ -43,6 +48,7 @@ services:
   vole-mps:
     links:
       - vole-eureka:eureka
+    container_name: app-mps
     build:
       context: ./
       dockerfile: Dockerfile-mps
@@ -51,6 +57,7 @@ services:
   vole-auth:
     links:
       - vole-eureka:eureka
+    container_name: app-auth
     build:
       context: ./
       dockerfile: Dockerfile-auth
@@ -62,6 +69,7 @@ services:
     links:
       - vole-eureka:eureka
       - vole-auth:auth
+    container_name: app-gateway
     build:
       context: ./
       dockerfile: Dockerfile-gateway
