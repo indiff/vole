@@ -9,15 +9,15 @@ sh 04startup.sh vole-eureka
 sleep 30
 sh 04startup.sh vole-config
 sleep 30
-sh 04startup.sh app-portal-data
+sh 04startup.sh vole-portal-data
 sleep 10
-sh 04startup.sh app-portal
+sh 04startup.sh vole-portal
 sleep 10
-sh 04startup.sh app-passport
+sh 04startup.sh vole-passport
 sleep 10
-sh 04startup.sh app-auth
+sh 04startup.sh vole-auth
 sleep 10
-sh 04startup.sh app-gateway
+sh 04startup.sh vole-gateway
 sleep 10
 
 
