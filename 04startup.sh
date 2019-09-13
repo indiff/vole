@@ -5,7 +5,7 @@
 #    注意：jar文件必须位于startup.sh目录的上一层目录。
 
 #启动参数 -Dspring.profiles.active=dev
-JAVA_OPTS="-server -Xms200m -Xmx200m -Xmn50m -XX:MetaspaceSize=50m -XX:MaxMetaspaceSize=50m -Xverify:none -XX:+DisableExplicitGC -Dsun.misc.URLClassPath.disableJarChecking=true  -Djava.awt.headless=true"
+JAVA_OPTS="-server -Xms200m -Xmx200m -Xmn50m -XX:MetaspaceSize=150m -XX:MaxMetaspaceSize=150m -Xverify:none -XX:+DisableExplicitGC -Dsun.misc.URLClassPath.disableJarChecking=true  -Djava.awt.headless=true"
 
 arg_name=${1%*/}
 this_dir="$( cd "$( dirname "$0"  )" && pwd )"
