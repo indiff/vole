@@ -17,11 +17,13 @@ jar_file="${this_dir}/${arg_name}/target/${arg_name}-0.0.1-SNAPSHOT.war"
 #父目录下jar文件存在
 if [ -f "${jar_file}" ]; then
     nohup java $JAVA_OPTS -jar ${jar_file}  > ${arg_name}.out 2>&1 &
+    echo "启动命令: java $JAVA_OPTS -jar ${jar_file}  > ${arg_name}.out 2>&1 &"
 	  echo "启动 ${jar_file}，日志文件 tail -f ${arg_name}.out"
     exit 0
 else
     jar_file="${this_dir}/${arg_name}/target/${arg_name}-0.0.1-SNAPSHOT.jar"
 	  nohup java $JAVA_OPTS -jar ${jar_file}  > ${arg_name}.out 2>&1 &
+	  echo "nohup java $JAVA_OPTS -jar ${jar_file}  > ${arg_name}.out 2>&1 &"
 	  echo "启动 ${jar_file}，日志文件 tail -f ${arg_name}.out"
     exit 0
 fi
