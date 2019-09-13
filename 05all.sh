@@ -6,9 +6,9 @@
 
 #单机启动微服务
 sh 04startup.sh vole-eureka
-sleep 10
+sleep 30
 sh 04startup.sh vole-config
-sleep 10
+sleep 30
 sh 04startup.sh app-portal-data
 sleep 10
 sh 04startup.sh app-portal
