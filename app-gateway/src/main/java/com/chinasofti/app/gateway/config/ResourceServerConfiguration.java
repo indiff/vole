@@ -1,7 +1,7 @@
 package com.chinasofti.app.gateway.config;
 
 import com.chinasofti.app.common.bean.config.FilterIgnorePropertiesConfig;
-import com.chinasofti.app.gateway.handler.VoleAccessDeniedHandler;
+import com.chinasofti.app.gateway.handler.AppAccessDeniedHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -32,7 +32,7 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
     @Autowired
     private OAuth2WebSecurityExpressionHandler expressionHandler;
     @Autowired
-    private VoleAccessDeniedHandler voleAccessDeniedHandler;
+    private AppAccessDeniedHandler appAccessDeniedHandler;
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
@@ -42,13 +42,13 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
                 .authorizeRequests();
         filterIgnorePropertiesConfig.getUrls().forEach(url -> registry.antMatchers(url).permitAll());
         //registry.anyRequest().authenticated();
-        registry.anyRequest().access("@volePermissionService.hasPermission(request,authentication)");
+        registry.anyRequest().access("@appPermissionServiceImpl.hasPermission(request,authentication)");
     }
 
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) {
         resources.expressionHandler(expressionHandler);
-        resources.accessDeniedHandler(voleAccessDeniedHandler);
+        resources.accessDeniedHandler(appAccessDeniedHandler);
     }
 
     /**

@@ -1,6 +1,6 @@
-//package com.github.vole.common.utils.redis;
+//package com.chinasofti.app.common.utils.redis;
 //
-//import com.github.vole.common.config.redis.RedisConfig;
+//import com.chinasofti.app.common.config.redis.RedisConfig;
 //import org.apache.log4j.Logger;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.stereotype.Component;

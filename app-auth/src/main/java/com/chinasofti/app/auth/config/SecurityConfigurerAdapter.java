@@ -3,7 +3,6 @@ package com.chinasofti.app.auth.config;
 import com.chinasofti.app.auth.component.mobile.MobileSecurityConfigurer;
 import com.chinasofti.app.auth.util.message.AuthAuthenticationFailureHandler;
 import com.chinasofti.app.auth.util.message.AuthLogoutSuccessHandler;
-import com.github.vole.auth.util.message.*;
 import com.chinasofti.app.common.bean.config.FilterIgnorePropertiesConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -42,7 +41,7 @@ public class SecurityConfigurerAdapter extends WebSecurityConfigurerAdapter {
                         .logoutSuccessUrl("/")
                         .invalidateHttpSession(true)
                         .clearAuthentication(true)
-                        .deleteCookies("vole")
+                        .deleteCookies("app")
                         .and()
                         .authorizeRequests();
         filterIgnorePropertiesConfig.getUrls().forEach(url -> registry.antMatchers(url).permitAll());

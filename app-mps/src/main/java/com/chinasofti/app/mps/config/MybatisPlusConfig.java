@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@MapperScan("com.github.vole.mps.mapper")
+@MapperScan("com.chinasofti.app.mps.mapper")
 public class MybatisPlusConfig {
     /**
      * 分页插件

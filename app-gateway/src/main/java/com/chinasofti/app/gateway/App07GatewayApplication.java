@@ -22,7 +22,7 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 public class App07GatewayApplication {
 
     public static void main(String[] args) {
-        log.debug("VoleGatewayApplication startup main");
+        log.debug("App07GatewayApplication startup main");
         SpringApplication application = new SpringApplication(App07GatewayApplication.class);
         application.setBannerMode(Banner.Mode.OFF);
         application.run(args);

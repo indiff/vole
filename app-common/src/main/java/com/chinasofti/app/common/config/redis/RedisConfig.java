@@ -1,4 +1,4 @@
-//package com.github.vole.common.config.redis;
+//package com.chinasofti.app.common.config.redis;
 //
 //import org.springframework.boot.context.properties.ConfigurationProperties;
 //import org.springframework.stereotype.Component;

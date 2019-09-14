@@ -1,4 +1,4 @@
-//package com.github.vole.common.config.redis;
+//package com.chinasofti.app.common.config.redis;
 //
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;

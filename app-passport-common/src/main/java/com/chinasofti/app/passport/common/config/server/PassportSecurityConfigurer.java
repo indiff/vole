@@ -7,7 +7,6 @@ import com.chinasofti.app.passport.common.filter.PassportServerContextFilter;
 import com.chinasofti.app.passport.common.handler.PassportTokenProcessingHandle;
 import com.chinasofti.app.passport.common.handler.ServerAuthenticationFailureHandler;
 import com.chinasofti.app.passport.common.handler.ServerLogoutSuccessHandler;
-import com.github.vole.passport.common.handler.*;
 import com.chinasofti.app.passport.common.tokenstore.PassportTokenStore;
 import org.springframework.context.ApplicationContext;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

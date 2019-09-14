@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@MapperScan("com.github.vole.portal.mapper")
+@MapperScan("com.chinasofti.app.portal.mapper")
 public class MybatisPlusConfig {
     /**
      * 分页插件

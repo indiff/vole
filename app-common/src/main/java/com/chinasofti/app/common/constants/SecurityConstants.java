@@ -14,7 +14,7 @@ public interface SecurityConstants {
     /**
      * 项目的license
      */
-    String Vole_LICENSE = "made by qwop";
+    String App_LICENSE = "made by qwop";
     /**
      * 基础角色
      */

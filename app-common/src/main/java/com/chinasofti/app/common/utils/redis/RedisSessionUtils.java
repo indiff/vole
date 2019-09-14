@@ -1,4 +1,4 @@
-//package com.github.vole.common.utils.redis;
+//package com.chinasofti.app.common.utils.redis;
 //
 //import org.apache.log4j.Logger;
 //
