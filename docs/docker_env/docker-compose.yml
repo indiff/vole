@@ -5,7 +5,7 @@ services:
     container_name: app-redis
     restart: always
     volumes:
-      - ../data/redis:/data
+      - "../data/redis:/data"
     environment:
       - REDIS_PASSWORD=
     networks:
@@ -19,7 +19,7 @@ services:
     container_name: app-rabbitmq
     restart: always
     volumes:
-      - ../data/rabbitmq:/var/lib/rabbitmq/mnesia
+      - "../data/rabbitmq:/var/lib/rabbitmq/mnesia"
     networks:
       - app-net
     ports:
