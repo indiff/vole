@@ -35,26 +35,15 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - ../data/mysql:/var/lib/mysql
+      - "./db:/var/lib/mysql"
+      - "./conf/my.cnf:/etc/my.cnf"
+      - "../db/portal.sql:/docker-entrypoint-initdb.d/portal.sql"
+      - "../db/vole.sql:/docker-entrypoint-initdb.d/vole.sql"
     environment:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: 12345678
       MYSQL_DATABASE: vole
       lower_case_table_names: 1
-
-  mysql-init:
-    image: mysql:8.0.17
-    container_name: app-mysql-init
-    links:
-      - mysql
-    networks:
-      - app-net
-    volumes:
-      - ../db/portal.sql:/docker-entrypoint-initdb.d/portal.sql
-      - ../db/vole.sql:/docker-entrypoint-initdb.d/vole.sql
-    environment:
-      MYSQL_ROOT_PASSWORD: 12345678
-
 networks:
   app-net:
     external: false
