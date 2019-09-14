@@ -1,8 +1,8 @@
 -- 创建数据库
-DROP database IF EXISTS `vole`;
-create database `vole` default character set utf8mb4 collate utf8mb4_general_ci;
--- 切换到 vole 数据库
-use vole;
+DROP database IF EXISTS `app`;
+create database `app` default character set utf8mb4 collate utf8mb4_general_ci;
+-- 切换到 app 数据库
+use app;
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;

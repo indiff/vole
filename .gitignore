@@ -32,3 +32,4 @@
 /logs/vole-portal-data/*.log
 /logs/vole-portal/*.log
 /logs/app-config-server/*.log
+/logs/app-eureka-server/*.log
