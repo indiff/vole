@@ -8,10 +8,10 @@ SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
--- Table structure for JOB_EXECUTION_LOG
+-- Table structure for job_execution_log
 -- ----------------------------
-DROP TABLE IF EXISTS `JOB_EXECUTION_LOG`;
-CREATE TABLE `JOB_EXECUTION_LOG` (
+DROP TABLE IF EXISTS `job_execution_log`;
+CREATE TABLE `job_execution_log` (
   `id` varchar(40) NOT NULL,
   `job_name` varchar(100) NOT NULL,
   `task_id` varchar(255) NOT NULL,
@@ -29,8 +29,8 @@ CREATE TABLE `JOB_EXECUTION_LOG` (
 -- ----------------------------
 -- Table structure for JOB_STATUS_TRACE_LOG
 -- ----------------------------
-DROP TABLE IF EXISTS `JOB_STATUS_TRACE_LOG`;
-CREATE TABLE `JOB_STATUS_TRACE_LOG` (
+DROP TABLE IF EXISTS `job_status_trace_log`;
+CREATE TABLE `job_status_trace_log` (
   `id` varchar(40) NOT NULL,
   `job_name` varchar(100) NOT NULL,
   `original_task_id` varchar(255) NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE `JOB_STATUS_TRACE_LOG` (
   `message` varchar(4000) DEFAULT NULL,
   `creation_time` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `TASK_ID_STATE_INDEX` (`task_id`,`state`)
+  KEY `task_id_state_index` (`task_id`,`state`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 -- ----------------------------
@@ -145,7 +145,7 @@ CREATE TABLE `oauth_client_details` (
 -- Records of oauth_client_details
 -- ----------------------------
 BEGIN;
-INSERT INTO `oauth_client_details` VALUES (1, 'vole', NULL, '{bcrypt}$2a$10$zqgaMTf2VSHXjIV28CrID.fgN1bGd73VTwLqvmTqHNak79nrRNz7W', 'server', 'client,password', NULL, NULL, NULL, NULL, NULL, 'true');
+INSERT INTO `oauth_client_details` VALUES (1, 'qwop', NULL, '{bcrypt}$2a$10$zqgaMTf2VSHXjIV28CrID.fgN1bGd73VTwLqvmTqHNak79nrRNz7W', 'server', 'client,password', NULL, NULL, NULL, NULL, NULL, 'true');
 COMMIT;
 
 -- ----------------------------
