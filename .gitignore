@@ -31,3 +31,4 @@
 /logs/vole-passport/*.log
 /logs/vole-portal-data/*.log
 /logs/vole-portal/*.log
+/logs/app-config-server/*.log

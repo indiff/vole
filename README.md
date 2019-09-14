@@ -1,10 +1,15 @@
-<img src="./docs/images/logo.png" height=80></img>
-
-[![ASF2](http://img.shields.io/badge/license-ASF2-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt)
-
-Vole
+<img src="./docs/images/sctcLogo.png" height=80></img>
+App
 -------
-Vole 是一个基于最新的SpringCloud2.0的微服务商业开发脚手架->(非教学版),支持公司全方位应用架构搭建
+App 基于SpringCloud2.0的微服务框架
+
+## 微服务架构的优点
+* 按业务划分的微服务单元独立部署，运行在独立的进程中，服务之间没有任何耦合，具备良好的扩展性和复用性
+* 服务之间通常采用 HTTP 通信，该通信机制与平台和语言无关
+* 每个微服务都有自己的数据库，服务间数据库相互是独立
+* 微服务采用自动化工具部署。Docker 容器技术是微服务最佳部署容器
+* 服务集中化管理（服务注册与发现：Eureka、Zookeeper、Consul），监控（服务运行状况监控：Spring-Boot-Admin-Server）
+* 微服务架构是分布式架构
 
 ## Features
 * 基于Eureka的服务管理
@@ -63,6 +68,3 @@ Zuul的网关服务，支持动态配置网关[更多](./docs/gateway.md)。
 
 ### Modules
 相关任务，消息，监控等组件[更多](./docs/modules.md)。
-
-# 交流方式-微信
-<img src="./docs/images/wx.png" height=400></img>

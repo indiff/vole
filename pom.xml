@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github</groupId>
-    <artifactId>vole</artifactId>
+    <groupId>com.chinasofti</groupId>
+    <artifactId>app</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -65,19 +65,19 @@
 
 
     <modules>
-        <module>vole-eureka</module>
-        <module>vole-config</module>
-        <module>vole-common</module>
-        <module>vole-auth</module>
-        <module>vole-gateway</module>
-        <module>vole-mps</module>
-        <module>vole-passport-common</module>
-        <module>vole-passport</module>
-        <module>vole-portal</module>
-        <module>vole-portal-common</module>
-        <module>vole-portal-data</module>
-        <module>vole-modules</module>
-        <module>vole-demo</module>
+        <module>app-eureka</module>
+        <module>app-config</module>
+        <module>app-common</module>
+        <module>app-auth</module>
+        <module>app-gateway</module>
+        <module>app-mps</module>
+        <module>app-passport-common</module>
+        <module>app-passport</module>
+        <module>app-portal</module>
+        <module>app-portal-common</module>
+        <module>app-portal-data</module>
+        <module>app-modules</module>
+        <module>app-demo</module>
     </modules>
 
     <dependencyManagement>

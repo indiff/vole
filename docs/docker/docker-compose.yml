@@ -1,6 +1,6 @@
 version: '2'
 services:
-  vole-eureka:
+  app-eureka:
     container_name: app-eureka
     build:
       context: ./
@@ -9,54 +9,54 @@ services:
     ports:
       - 1025:1025
 
-  vole-config:
+  app-config:
     links:
-      - vole-eureka:eureka
+      - app-eureka:eureka
     container_name: app-config
     build:
       context: ./
       dockerfile: Dockerfile-config
     restart: always
 
-  vole-portal-data:
+  app-portal-data:
     links:
-      - vole-eureka:eureka
+      - app-eureka:eureka
     container_name: app-portal-data
     build:
       context: ./
       dockerfile: Dockerfile-portal-data
     restart: always
 
-  vole-portal:
+  app-portal:
     links:
-      - vole-eureka:eureka
+      - app-eureka:eureka
     container_name: app-portal
     build:
       context: ./
       dockerfile: Dockerfile-portal
     restart: always
 
-  vole-passport:
+  app-passport:
     links:
-      - vole-eureka:eureka
+      - app-eureka:eureka
     container_name: app-passport
     build:
       context: ./
       dockerfile: Dockerfile-passport
     restart: always
 
-  vole-mps:
+  app-mps:
     links:
-      - vole-eureka:eureka
+      - app-eureka:eureka
     container_name: app-mps
     build:
       context: ./
       dockerfile: Dockerfile-mps
     restart: always
 
-  vole-auth:
+  app-auth:
     links:
-      - vole-eureka:eureka
+      - app-eureka:eureka
     container_name: app-auth
     build:
       context: ./
@@ -65,10 +65,10 @@ services:
     ports:
       - 3000:3000
 
-  vole-gateway:
+  app-gateway:
     links:
-      - vole-eureka:eureka
-      - vole-auth:auth
+      - app-eureka:eureka
+      - app-auth:auth
     container_name: app-gateway
     build:
       context: ./

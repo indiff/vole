@@ -5,19 +5,19 @@
 #    注意：jar文件必须位于startup.sh目录的上一层目录。
 
 #单机启动微服务
-sh 04startup.sh vole-eureka
+sh 04startup.sh app-eureka
 sleep 30
-sh 04startup.sh vole-config
+sh 04startup.sh app-config
 sleep 30
-sh 04startup.sh vole-portal-data
+sh 04startup.sh app-portal-data
 sleep 10
-sh 04startup.sh vole-portal
+sh 04startup.sh app-portal
 sleep 10
-sh 04startup.sh vole-passport
+sh 04startup.sh app-passport
 sleep 10
-sh 04startup.sh vole-auth
+sh 04startup.sh app-auth
 sleep 10
-sh 04startup.sh vole-gateway
+sh 04startup.sh app-gateway
 sleep 10
 
 

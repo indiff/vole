@@ -1,0 +1,33 @@
+server:
+  port: 8600
+
+spring:
+  application:
+    name: app-turbine
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 20
+    health-check-url-path: /actuator/health
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1025/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+
+
+turbine:
+  app-config: app-mps,app-demo,app-passport,app-auth,app-gateway,app-portal,app-portal-data
+  aggregator:
+    # turbine聚集数据的粒度
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+  combine-host-port: true
