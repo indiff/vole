@@ -6,5 +6,7 @@
 #    printf "Applying update ${file}\n"
 #    mysql -uroot -p$MYSQL_ROOT_PASSWORD -h xxx-db < ${file}
 #done
-mysql -uroot -p$MYSQL_ROOT_PASSWORD -h portal < ../db/portal.sql
-mysql -uroot -p$MYSQL_ROOT_PASSWORD -h vole < ../db/vole.sql
+#mysql -uroot -p$MYSQL_ROOT_PASSWORD -h portal < ../db/portal.sql
+#mysql -uroot -p$MYSQL_ROOT_PASSWORD -h vole < ../db/vole.sql
+docker-compose up -d
+echo "docker logs -f app-mysql"
