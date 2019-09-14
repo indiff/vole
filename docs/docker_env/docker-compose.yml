@@ -35,7 +35,7 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - "./db:/var/lib/mysql"
+      - "../data/mysql:/var/lib/mysql"
       - "./conf/my.cnf:/etc/my.cnf"
       - "../db/portal.sql:/docker-entrypoint-initdb.d/portal.sql"
       - "../db/vole.sql:/docker-entrypoint-initdb.d/vole.sql"
