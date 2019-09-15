@@ -74,3 +74,15 @@ Zuul的网关服务，支持动态配置网关[更多](./docs/gateway.md)。
 
 ### Modules
 相关任务，消息，监控等组件[更多](./docs/modules.md)。
+
+## 单机部署
+*  启动中间件环境
+```bash
+cd docs/docker_env
+sudo sh 01up.sh
+```
+*  启动应用
+```bash
+sudo sh 05all.sh
+```
+

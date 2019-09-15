@@ -9,14 +9,18 @@ sh 04startup.sh app-eureka
 sleep 30
 sh 04startup.sh app-config
 sleep 30
+sh 04startup.sh app-auth
+sleep 10
+sh 04startup.sh app-passport
+sleep 10
+
 sh 04startup.sh app-portal-data
 sleep 10
 sh 04startup.sh app-portal
 sleep 10
-sh 04startup.sh app-passport
+sh 04startup.sh app-mps
 sleep 10
-sh 04startup.sh app-auth
-sleep 10
+
 sh 04startup.sh app-gateway
 sleep 10
 
