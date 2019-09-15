@@ -24,8 +24,8 @@
       </form>
     </div>
     <footer>
-      <p>support by: vole</p>
-      <p>email: <a href="mailto:61444803@qq.com">61444803@qq.com</a>.</p>
+      <p>support by: qwop</p>
+      <p>email: <a href="mailto:admin@126.com">admin@126.com</a>.</p>
     </footer>
   </body>
 </html>

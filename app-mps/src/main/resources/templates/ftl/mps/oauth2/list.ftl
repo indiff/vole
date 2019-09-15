@@ -6,7 +6,7 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      <small>会员管理 > 客户端管理</small>
+      <small>用户管理 > 客户端管理</small>
     </h1>
   </section>
   <!-- Main content -->

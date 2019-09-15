@@ -9,7 +9,7 @@ import com.chinasofti.app.mps.model.entity.OauthClientDetails;
  *  Mapper 接口
  * </p>
  *
- * @author lengleng
+ * @author tanyuanji
  * @since 2018-05-15
  */
 public interface OauthClientDetailsMapper extends BaseMapper<OauthClientDetails> {

@@ -10,7 +10,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/gavenwangcn/springcloudconfig.git
+          uri: http://47.107.37.108:8087/sctc/app.git
           search-paths: respo
 
 eureka:
