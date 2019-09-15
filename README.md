@@ -45,6 +45,9 @@ App 基于SpringCloud2.0的微服务框架
 ## 组件
 vole由`eureka`, `auth`,`config`,`gateway`,`mps`,`passport`,`portal`,`modules`组成
 
+### Common
+基础核心工具包，主要负责如 请求切面、服务配置、异常处理、参数格式化、请求防护、redis、Db、基础配置组件、以及其他相关如文件服务、基础工具类等组件。这里，重点要介绍 bean 包下组件。
+
 ### Eureka
 Eureka服务发现管理,支持高可用配置[更多](./docs/eureka.md)。
 
@@ -58,13 +61,16 @@ Spring config的配置服务管理[更多](./docs/config.md)。
 Zuul的网关服务，支持动态配置网关[更多](./docs/gateway.md)。
 
 ### Mps
-会员管理中心[更多](./docs/mps.md)。
+监测管理中心[更多](./docs/mps.md)。
 
 ### Passport
-后台统一登陆管理[更多](./docs/passport.md)。
+微服务登陆统一中心主要负责各系统后台相关登陆服务管理，基于 springSecurity 改造使用 cookie 管理登陆信息的服务[更多](./docs/passport.md)。
 
 ### Portal
 后台管理中心[更多](./docs/portal.md)。
+
+### Portal-Data
+负责对用户，权限，菜单的基本数据读取的管理。
 
 ### Modules
 相关任务，消息，监控等组件[更多](./docs/modules.md)。
